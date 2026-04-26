@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Удивительный мир котиков 🐱</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="nav">
+        <div class="nav-brand">🐱 Мир котиков</div>
+        <div class="nav-links">
+            <a href="#home" class="nav-link active" data-slide="0">Главная</a>
+            <a href="#facts" class="nav-link" data-slide="1">Факты</a>
+            <a href="#breeds" class="nav-link" data-slide="2">Породы</a>
+            <a href="#care" class="nav-link" data-slide="3">Уход</a>
+            <a href="#gallery" class="nav-link" data-slide="4">Галерея</a>
+            <a href="#quiz" class="nav-link" data-slide="5">Викторина</a>
+        </div>
+    </nav>
+
+    <!-- Слайд 1: Главная -->
+    <section class="slide slide-home active" id="home">
+        <div class="slide-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Удивительный мир <span class="highlight">котиков</span></h1>
+                <p class="hero-subtitle">Школьный проект о самых любимых домашних животных</p>
+                <div class="hero-paws">🐾🐾🐾</div>
+                <button class="btn btn-primary" onclick="nextSlide()">Начать путешествие →</button>
+            </div>
+            <div class="hero-image">
+                <div class="cat-emoji-big">😺</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Слайд 2: Интересные факты -->
+    <section class="slide slide-facts" id="facts">
+        <div class="slide-content">
+            <h2 class="slide-title">🧠 Интересные факты о кошках</h2>
+            <div class="facts-grid">
+                <div class="fact-card" style="--delay: 0.1s">
+                    <div class="fact-icon">😴</div>
+                    <h3>Сони</h3>
+                    <p>Кошки спят <strong>12-16 часов</strong> в сутки. Это примерно 70% их жизни!</p>
+                </div>
+                <div class="fact-card" style="--delay: 0.2s">
+                    <div class="fact-icon">👃</div>
+                    <h3>Супер-нос</h3>
+                    <p>У кошек <strong>200 миллионов</strong> обонятельных рецепторов — в 14 раз больше, чем у людей.</p>
+                </div>
+                <div class="fact-card" style="--delay: 0.3s">
+                    <div class="fact-icon">💓</div>
+                    <h3>Мурлыканье</h3>
+                    <p>Кошки мурлычут с частотой <strong>25-150 Гц</strong>, что способствует заживлению костей.</p>
+                </div>
+                <div class="fact-card" style="--delay: 0.4s">
+                    <div class="fact-icon">🏃</div>
+                    <h3>Скорость</h3>
+                    <p>Домашняя кошка может бегать со скоростью до <strong>50 км/ч</strong> на короткие дистанции.</p>
+                </div>
+                <div class="fact-card" style="--delay: 0.5s">
+                    <div class="fact-icon">👂</div>
+                    <h3>Слух</h3>
+                    <p>Кошки могут поворачивать уши на <strong>180 градусов</strong> благодаря 32 мышцам в каждом ухе.</p>
+                </div>
+                <div class="fact-card" style="--delay: 0.6s">
+                    <div class="fact-icon">🌍</div>
+                    <h3>Популярность</h3>
+                    <p>В мире насчитывается более <strong>600 миллионов</strong> домашних кошек.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Слайд 3: Породы -->
+    <section class="slide slide-breeds" id="breeds">
+        <div class="slide-content">
+            <h2 class="slide-title">🏆 Популярные породы</h2>
+            <div class="breeds-grid">
+                <div class="breed-card" style="--delay: 0.1s">
+                    <div class="breed-image">🐱</div>
+                    <div class="breed-info">
+                        <h3>Британская короткошёрстная</h3>
+                        <div class="breed-stats">
+                            <span class="stat">📏 Средний размер</span>
+                            <span class="stat">⚖️ 4-8 кг</span>
+                        </div>
+                        <p>Спокойная и независимая порода с плюшевой шерстью. Отличные компаньоны для семей.</p>
+                    </div>
+                </div>
+                <div class="breed-card" style="--delay: 0.2s">
+                    <div class="breed-image">😸</div>
+                    <div class="breed-info">
+                        <h3>Мейн-кун</h3>
+                        <div class="breed-stats">
+                            <span class="stat">📏 Крупный</span>
+                            <span class="stat">⚖️ 6-12 кг</span>
+                        </div>
+                        <p>Одна из самых крупных пород. Дружелюбные, игривые и очень умные «нежные гиганты».</p>
+                    </div>
+                </div>
+                <div class="breed-card" style="--delay: 0.3s">
+                    <div class="breed-image">😻</div>
+                    <div class="breed-info">
+                        <h3>Сиамская</h3>
+                        <div class="breed-stats">
+                            <span class="stat">📏 Средний размер</span>
+                            <span class="stat">⚖️ 3-5 кг</span>
+                        </div>
+                        <p>Очень общительная и «разговорчивая» порода. Любят быть в центре внимания.</p>
+                    </div>
+                </div>
+                <div class="breed-card" style="--delay: 0.4s">
+                    <div class="breed-image">🐈</div>
+                    <div class="breed-info">
+                        <h3>Шотландская вислоухая</h3>
+                        <div class="breed-stats">
+                            <span class="stat">📏 Средний размер</span>
+                            <span class="stat">⚖️ 3-6 кг</span>
+                        </div>
+                        <p>Узнаваемы по загнутым вперёд ушкам. Милые и ласковые домашние любимцы.</p>
+                    </div>
+                </div>
+                <div class="breed-card" style="--delay: 0.5s">
+                    <div class="breed-image">😼</div>
+                    <div class="breed-info">
+                        <h3>Персидская</h3>
+                        <div class="breed-stats">
+                            <span class="stat">📏 Средний размер</span>
+                            <span class="stat">⚖️ 3-7 кг</span>
+                        </div>
+                        <p>Роскошная длинная шерсть и спокойный характер. Идеальные «диванные» кошки.</p>
+                    </div>
+                </div>
+                <div class="breed-card" style="--delay: 0.6s">
+                    <div class="breed-image">😺</div>
+                    <div class="breed-info">
+                        <h3>Сфинкс</h3>
+                        <div class="breed-stats">
+                            <span class="stat">📏 Средний размер</span>
+                            <span class="stat">⚖️ 3-6 кг</span>
+                        </div>
+                        <p>Бесшёрстная порода с необычной внешностью. Очень ласковые и энергичные.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Слайд 4: Уход -->
+    <section class="slide slide-care" id="care">
+        <div class="slide-content">
+            <h2 class="slide-title">💝 Как ухаживать за котиком</h2>
+            <div class="care-timeline">
+                <div class="care-item" style="--delay: 0.1s">
+                    <div class="care-number">1</div>
+                    <div class="care-content">
+                        <h3>🍽️ Правильное питание</h3>
+                        <p>Кормите кошку качественным кормом 2-3 раза в день. Всегда оставляйте свежую воду. Не давайте шоколад, лук и молоко — это вредно!</p>
+                    </div>
+                </div>
+                <div class="care-item" style="--delay: 0.2s">
+                    <div class="care-number">2</div>
+                    <div class="care-content">
+                        <h3>🏥 Ветеринар</h3>
+                        <p>Регулярно посещайте ветеринара для осмотров и прививок. Рекомендуется минимум 1 раз в год.</p>
+                    </div>
+                </div>
+                <div class="care-item" style="--delay: 0.3s">
+                    <div class="care-number">3</div>
+                    <div class="care-content">
+                        <h3>🧹 Чистота</h3>
+                        <p>Содержите лоток в чистоте — убирайте его каждый день. Регулярно вычёсывайте шерсть.</p>
+                    </div>
+                </div>
+                <div class="care-item" style="--delay: 0.4s">
+                    <div class="care-number">4</div>
+                    <div class="care-content">
+                        <h3>🎮 Игры и активность</h3>
+                        <p>Играйте с кошкой каждый день! Игрушки-дразнилки, мячики и когтеточки — обязательные атрибуты.</p>
+                    </div>
+                </div>
+                <div class="care-item" style="--delay: 0.5s">
+                    <div class="care-number">5</div>
+                    <div class="care-content">
+                        <h3>❤️ Любовь и внимание</h3>
+                        <p>Кошки нуждаются в вашем внимании и ласке. Разговаривайте с ними, гладьте и проводите время вместе.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Слайд 5: Галерея -->
+    <section class="slide slide-gallery" id="gallery">
+        <div class="slide-content">
+            <h2 class="slide-title">📸 Галерея котиков</h2>
+            <p class="gallery-subtitle">Нажми на кнопку, чтобы увидеть случайного котика!</p>
+            <div class="gallery-container">
+                <div class="gallery-main">
+                    <img id="catImage" src="" alt="Случайный котик" class="gallery-img" style="display:none;">
+                    <div id="catPlaceholder" class="gallery-placeholder">
+                        <span>🐱</span>
+                        <p>Нажми кнопку ниже!</p>
+                    </div>
+                    <div id="catLoader" class="loader" style="display:none;">
+                        <div class="spinner"></div>
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-cat" onclick="loadRandomCat()">🎲 Показать котика!</button>
+            </div>
+            <div class="fun-counter">
+                <p>Котиков показано: <span id="catCounter" class="counter-number">0</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Слайд 6: Викторина -->
+    <section class="slide slide-quiz" id="quiz">
+        <div class="slide-content">
+            <h2 class="slide-title">🎯 Викторина: Проверь свои знания!</h2>
+            <div id="quizContainer" class="quiz-container">
+                <div id="quizQuestion" class="quiz-question"></div>
+                <div id="quizOptions" class="quiz-options"></div>
+                <div id="quizFeedback" class="quiz-feedback"></div>
+                <div class="quiz-progress">
+                    <div class="quiz-progress-bar">
+                        <div id="quizProgressFill" class="quiz-progress-fill"></div>
+                    </div>
+                    <span id="quizProgressText" class="quiz-progress-text">Вопрос 1 из 5</span>
+                </div>
+            </div>
+            <div id="quizResult" class="quiz-result" style="display:none;">
+                <div class="result-emoji" id="resultEmoji">😺</div>
+                <h3 id="resultTitle"></h3>
+                <p id="resultText"></p>
+                <button class="btn btn-primary" onclick="restartQuiz()">🔄 Пройти заново</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <p>Школьный проект «Удивительный мир котиков» 🐾 2026</p>
+    </footer>
+
+    <!-- Навигация слайдов -->
+    <div class="slide-nav">
+        <button class="slide-nav-btn" onclick="prevSlide()">◀</button>
+        <div class="slide-dots" id="slideDots"></div>
+        <button class="slide-nav-btn" onclick="nextSlide()">▶</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
